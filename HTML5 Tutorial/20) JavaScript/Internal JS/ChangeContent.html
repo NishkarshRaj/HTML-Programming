@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Change HTML Content </title>
+<meta charset="UTF-8">
+</head>
+<body>
+<p id="nish"> Hello! I am placeholder!! I want the Champ!! </p>
+<button onclick="Nish()"> Click me for The Champ </button>
+<script>
+function Nish()
+{
+document.getElementById('nish').innerHTML = "John Cena is The Champ";
+}
+</script>
+</body>
+</html>
+
+<!-- It works even without the function because a function call is always searched in script tag and that is fully executed irrespective of function is used or not
+document.getElementById('nish').innerHTML = "John Cena is The Champ";-->
