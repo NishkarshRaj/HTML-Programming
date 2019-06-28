@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Image Map</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1> Image Map property to break an Image into multiple different hyperlinks </h1>
+<p> To get the co-ordinates of an image, use: <a href="https://www.mobilefish.com/services/record_mouse_coordinates/record_mouse_coordinates.php"> this link </a> </p>
+<pre>
+Syntax:
+
+<area coords="value">
+
+Attribute Values:
+
+1) x1,y1,x2,y2 	Specifies the coordinates of the top-left and bottom-right corner of the rectangle (shape="rect")
+2) x,y,radius 	Specifies the coordinates of the circle center and the radius (shape="circle")
+3) x1,y1,x2,y2,..,xn,yn 	Specifies the coordinates of the edges of the polygon. If the first and last coordinate pairs are not the same, the browser will add the last coordinate pair to close the polygon (shape="poly")
+</pre>
+<img src="SiB.jpg" alt="Storms In Brewing" usemap="#nish">
+<map name ="nish">
+<area shape="rect" coords="160,230,210,250" alt="GitHub" href="https://www.github.com/NishkarshRaj">
+<area shape="circle" coords="235,125,50" alt="LinkedIn" href="https://www.linkedin.com/in/nishkarsh-raj-084425159/">
+</map>
+</body>
+</html>
