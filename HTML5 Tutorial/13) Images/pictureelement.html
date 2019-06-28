@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title> Paragraph Background </title>
+<meta charset="UTF-8">
+</head>
+<body>
+<h1> Picture Element </h1>
+<pre>
+HTML5 introduced the <picture> element to add more flexibility when specifying image resources.
+
+The <picture> element contains a number of <source> elements, each referring to different image sources. This way the browser can choose the image that best fits the current view and/or device.
+
+Each <source> element have attributes describing when their image is the most suitable.
+
+The browser will use the first <source> element with matching attribute values, and ignore any following <source> elements.
+
+Note: Always specify an <img> element as the last child element of the <picture> element. The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags matched.
+
+</pre>
+ <picture>
+  <source media="(min-width: 650px)" srcset="nish.jpg">
+  <source media="(min-width: 465px)" srcset="SiB.jpg">
+  <img src="workplace.jpg" alt="Workplace">
+</picture> 
+</body>
+</html>
