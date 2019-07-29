@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div1 {
+  width: 500px;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid black;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+<h4>Drag Image in the container</h4>
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="OpenGenus.png" draggable="true" ondragstart="drag(event)" width="480" height="130">
+</body>
+</html>
